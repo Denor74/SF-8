@@ -10,7 +10,7 @@ if (a > 0) {
 
 console.log('Тернарный оператор'); 
 
-let result1;
+
 
 if (a > 0) {
   result1 = 'Число положительное'; 
@@ -21,6 +21,26 @@ console.log('result1 = ' + result1);
 
 // или
 
-let result = (a > 0) ? 'Число положительное' : 'Число не положительное';
-console.log('result = ' + result);
+let result2 = (a > 0) ? 'Число положительное' : 'Число не положительное';
+console.log('result = ' + result2);
 
+// switch
+console.log('switch');
+
+const month = prompt('Введите номер месяца', '1');
+switch (month) {
+  case '12':
+    alert('Декабрь');
+    break;
+  case '1':
+    alert('Январь');
+    break;
+  case '2':
+    alert('Февраль');
+    break;
+  case '11':
+    alert('Зима близко');
+    break;
+  default:
+    alert('До зимы еще далеко');
+}
