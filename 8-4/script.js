@@ -44,3 +44,18 @@ switch (month) {
   default:
     alert('До зимы еще далеко');
 }
+
+console.log('Задание 8.4.2');
+let currentRingOwner;
+let firstRingOwner = "Smeagol" || "Bildo" || "Frodo" || "Sam";
+let secondRinfOwner; //= "Smeagol" && "Bildo" || "Frodo" && "Sam";
+console.log("secondRinfOwner - " + secondRinfOwner);
+let thirstRingOwner = secondRinfOwner = "Smeagol"  ? "Frodo" : "Smeagol";
+console.log("firstRingOwner - " + firstRingOwner);
+console.log("secondRinfOwner - " + secondRinfOwner);
+if (firstRingOwner == secondRinfOwner) {
+  currentRingOwner = "Sam"
+} else {
+  currentRingOwner = "Bildo"
+};
+console.log("currentRingOwner - " + currentRingOwner);
